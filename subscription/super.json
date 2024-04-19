@@ -146,7 +146,7 @@
         ],
         "pingConfig": {
             "destination": "http:\/\/www.apple.com\/library\/test\/success.html",
-            "interval": "5m",
+            "interval": "10s",
             "connectivity": "http:\/\/connectivitycheck.platform.hicloud.com\/generate_204",
             "timeout": "4s",
             "sampling": 2
