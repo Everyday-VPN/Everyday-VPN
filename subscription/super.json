@@ -146,19 +146,19 @@
         ],
         "pingConfig": {
             "destination": "http:\/\/www.apple.com\/library\/test\/success.html",
-            "interval": "60s",
+            "interval": "5m",
             "connectivity": "http:\/\/connectivitycheck.platform.hicloud.com\/generate_204",
             "timeout": "4s",
             "sampling": 2
         }
     },
     "observatory": {
-        "probeInterval": "60s",
+        "probeInterval": "5m",
         "probeURL": "https:\/\/api.github.com\/_private\/browser\/stats",
         "subjectSelector": [
             "proxy"
         ],
         "EnableConcurrency": true
     },
-    "remarks": "@Everyday_VPN | Super Config"
+    "remarks": "@Everyday_VPN | Super Config 🏆"
 }
