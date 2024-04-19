@@ -1,1 +1,164 @@
+{
+    "dns": {
+        "hosts": {
+            "domain:googleapis.cn": "googleapis.com"
+        },
+        "servers": [
+            "1.1.1.2"
+        ]
+    },
+    "inbounds": [
+        {
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "userLevel": 8
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "fakedns"
+                ],
+                "enabled": true
+            },
+            "tag": "socks"
+        },
+        {
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "userLevel": 8
+            },
+            "tag": "http"
+        }
+    ],
+    "log": {
+        "loglevel": "warning"
+    },
+    "outbounds": [
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "01.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_01_fragment"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "02.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_02_fragment"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "03.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_03_fragment"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "04.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_04_fragment"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "06.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_06_fragment"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "07.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_07_fragment"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "09.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_09_fragment"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "172.67.191.234","port": 8443,"users": [{"encryption": "none","flow": "","id": "253e78fc-d3eb-454c-89e5-3268f76c6276","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","security": "tls","tlsSettings": {"allowInsecure": false,"alpn": ["h2","http/1.1"],"fingerprint": "chrome","publicKey": "","serverName": "10.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech","shortId": "","show": false,"spiderX": ""}},"proxySettings": {"tag": "fragment","transportLayer": true},"tag": "proxy_10_fragment"},
 
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4f9:c010:6fb9::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_01_ipv6_reality"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4f9:c011:64f::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_02_ipv6_reality"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4f9:c011:1e1d::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_03_ipv6_reality"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4f9:c010:521a::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_04_ipv6_reality"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4ff:f0:118b::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_06_ipv6_reality"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4ff:f0:1b19::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_07_ipv6_reality"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4f8:1c1b:2430::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_09_ipv6_reality"},
+        {"mux": {"concurrency": -1,"enabled": false,"xudpConcurrency": 8,"xudpProxyUDP443": ""},"protocol": "vless","settings": {"vnext": [{"address": "2a01:4f8:1c1b:14f0::1","port": 443,"users": [{"encryption": "none","flow": "","id": "0c437c6f-7de9-4949-84ef-5f2969f5e722","level": 8,"security": "auto"}]}]},"streamSettings": {"grpcSettings": {"authority": "","multiMode": false,"serviceName": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN"},"network": "grpc","realitySettings": {"allowInsecure": false,"fingerprint": "chrome","publicKey": "AVesZ9rUbwnESVl0YSPs98oWmZbXlhDVjR4ssJAw6yw","serverName": "gsmarena.com","shortId": "32d7a82d","show": false,"spiderX": "/"},"security": "reality"},"tag": "proxy_10_ipv6_reality"},
+
+        {
+            "protocol": "freedom",
+            "settings": {},
+            "tag": "direct"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "fragment",
+            "domainStrategy": "UseIP",
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
+            },
+            "settings": {
+                "fragment": {
+                    "packets": "tlshello",
+                    "length": "10-20",
+                    "interval": "10-20"
+                }
+            },
+            "streamSettings": {
+                "sockopt": {
+                    "tcpNoDelay": true,
+                    "domainStrategy": "UseIP"
+                }
+            }
+        },
+        {
+            "protocol": "blackhole",
+            "settings": {
+                "response": {
+                    "type": "http"
+                }
+            },
+            "tag": "block"
+        }
+    ],
+    "policy": {
+        "levels": {
+            "8": {
+                "connIdle": 300,
+                "downlinkOnly": 1,
+                "handshake": 4,
+                "uplinkOnly": 1
+            }
+        },
+        "system": {
+            "statsOutboundUplink": true,
+            "statsOutboundDownlink": true
+        }
+    },
+    "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "ip": [
+                    "1.1.1.1"
+                ],
+                "outboundTag": "direct",
+                "port": "53",
+                "type": "field"
+            },
+            {
+                "balancerTag": "all",
+                "type": "field",
+                "network": "tcp,udp"
+            }
+        ],
+        "balancers": [
+            {
+                "tag": "all",
+                "selector": [
+                    "proxy"
+                ],
+                "strategy": {
+                    "type": "leastPing"
+                }
+            }
+        ]
+    },
+    "burstObservatory": {
+        "subjectSelector": [
+            "proxy"
+        ],
+        "pingConfig": {
+            "destination": "http:\/\/www.apple.com\/library\/test\/success.html",
+            "interval": "60s",
+            "connectivity": "http:\/\/connectivitycheck.platform.hicloud.com\/generate_204",
+            "timeout": "4s",
+            "sampling": 2
+        }
+    },
+    "observatory": {
+        "probeInterval": "60s",
+        "probeURL": "https:\/\/api.github.com\/_private\/browser\/stats",
+        "subjectSelector": [
+            "proxy"
+        ],
+        "EnableConcurrency": true
+    },
+    "remarks": "@Everyday_VPN | Super Config"
+}
