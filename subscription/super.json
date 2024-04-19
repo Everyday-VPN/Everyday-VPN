@@ -153,7 +153,7 @@
         }
     },
     "observatory": {
-        "probeInterval": "5m",
+        "probeInterval": "10s",
         "probeURL": "https:\/\/api.github.com\/_private\/browser\/stats",
         "subjectSelector": [
             "proxy"
