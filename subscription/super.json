@@ -1,4 +1,5 @@
 {
+    "remarks": "@Everyday_VPN | Super Config 🏆",
     "dns": {
         "hosts": {
             "domain:googleapis.cn": "googleapis.com"
@@ -141,5 +142,5 @@
         ],
         "EnableConcurrency": true
     },
-    "remarks": "@Everyday_VPN | Super Config 🏆"
+    "stats": {}
 }
