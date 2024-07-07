@@ -9,3 +9,5 @@
 ## ساب ابَر کانفیگ (سرورهای هر لوکیشن همگی با هم داخل یک کانفیگ قرار دارند و شما به صورت گردشی به سریع ترین وصل میشید):
 
 [https://raw.githubusercontent.com/Everyday-VPN/Everyday-VPN/main/subscription/super.json](https://raw.githubusercontent.com/Everyday-VPN/Everyday-VPN/main/subscription/super.json)
+
+## کد اختصاصی ما در [اپ مهسا](https://play.google.com/store/apps/details?id=com.MahsaNet.MahsaNG): `4bf23538`
