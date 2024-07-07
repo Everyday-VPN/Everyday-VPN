@@ -1,7 +1,6 @@
 # Everyday_VPN | هر روز وی‌پی‌ان
 
-## کانال تلگرام:
-## [@Everyday_VPN](https://t.me/Everyday_VPN)
+## کانال تلگرام: [https://t.me/Everyday_VPN](https://t.me/Everyday_VPN)
 ## ساب معمولی (سرورها جدا جدا به ترتیب خلوت بودن مرتب شده اند):
 
 [https://raw.githubusercontent.com/Everyday-VPN/Everyday-VPN/main/subscription/main.txt](https://raw.githubusercontent.com/Everyday-VPN/Everyday-VPN/main/subscription/main.txt)
